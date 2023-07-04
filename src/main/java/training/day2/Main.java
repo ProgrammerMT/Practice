@@ -27,8 +27,13 @@ public class Main {
         System.out.println(s.trim());
         System.out.println(s.substring(0,6).charAt(7));
 
-        /* Scanner scanner = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder("Hello");
+        sb.append(" append");
+        System.out.println(sb);
+
+        /*
         //Zadacha 1
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a day num: ");
         int day = scanner.nextInt();
         switch (day){
