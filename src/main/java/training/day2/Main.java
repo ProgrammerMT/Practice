@@ -1,11 +1,9 @@
 package training.day2;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.List;
+import java.util.*;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+// then press Enter. You can now see whitespace characters in your code. .
 public class Main {
     public static void sum(int[] nums){
         int sum = 0;
@@ -38,6 +36,24 @@ public class Main {
         System.out.println(sb);
         sb.insert(1, "H");
         sb.reverse();
+        int[] integers = new int[3];
+        int[] integers1 = {1,3};
+        int[][] dvumerenMasiv = new int[1][3];
+        for (int i : integers){
+            System.out.println(i);
+        }
+        Arrays.sort(integers);
+        Arrays.binarySearch(integers, 1);
+
+        ArrayList<Integer> integer = new ArrayList<>();
+        integer.add(101);
+        integer.remove(new Integer(101));
+        Collections.sort(integer);
+        integer.size();
+        integer.set(1,2);
+        integer.clear();
+        integer.isEmpty();
+        integer.contains(1);
 
 
         /*
@@ -139,8 +155,8 @@ public class Main {
             System.out.println(day1);
         }
 */
-        //Homework
-        //Zadacha 1
+        //Homework.
+        //Zadacha 1.
         String[] words = {"Алфа", "аватар", "беда", "бреза", "салон"};
         for (String word1 : words){
             if (word1.charAt(0) == 'a' || word1.charAt(0) == 'A'){
@@ -148,7 +164,7 @@ public class Main {
             }
         }
 
-        //Zadacha 2
+        //Zadacha 2.
         Scanner scann = new Scanner(System.in);
         int[] arr = new int[10];
         for (int i = 0; i < arr.length; i++){
@@ -156,7 +172,8 @@ public class Main {
         }
         sum(arr);
 
-        //Zadacha 3
+
+        //Zadacha 3.
         List<String> list = new ArrayList<>();
         for (int i = 0; i < 4; i++){
             System.out.println("Write a word: ");
