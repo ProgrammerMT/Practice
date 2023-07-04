@@ -2,12 +2,32 @@ package training.day2;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.List;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
+    public static void sum(int[] nums){
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++){
+            sum += nums[i];
+        }
+        System.out.println(sum);
+    }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        String s = "World";
+        System.out.println(s.charAt(4));
+        System.out.println(s.toLowerCase());
+        System.out.println(s.substring(0,6));
+        System.out.println(s.startsWith("hello"));
+        s = s.concat("World");
+        System.out.println(s.indexOf("World", 6));
+        System.out.println(s.contains("lo"));
+        System.out.println(s.replace("l", "L"));
+        System.out.println(s.trim());
+        System.out.println(s.substring(0,6).charAt(7));
+
+        /* Scanner scanner = new Scanner(System.in);
         //Zadacha 1
         System.out.println("Enter a day num: ");
         int day = scanner.nextInt();
@@ -104,8 +124,40 @@ public class Main {
         for (String day1 : days) {
             System.out.println(day1);
         }
+*/
+        //Homework
+        //Zadacha 1
+        String[] words = {"Алфа", "аватар", "беда", "бреза", "салон"};
+        for (String word1 : words){
+            if (word1.charAt(0) == 'a' || word1.charAt(0) == 'A'){
+                System.out.println(word1);
+            }
+        }
 
+        //Zadacha 2
+        Scanner scann = new Scanner(System.in);
+        int[] arr = new int[10];
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = scann.nextInt();
+        }
+        sum(arr);
 
+        //Zadacha 3
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < 4; i++){
+            System.out.println("Write a word: ");
+            list.add(scann.next());
+        }
 
+        List<String> list1 = new ArrayList<>();
+        for (String input : list){
+            if (input.length() >= 4){
+                list1.add(input);
+            }
+        }
+
+        for (String input : list1){
+            System.out.println(input);
+        }
     }
 }
