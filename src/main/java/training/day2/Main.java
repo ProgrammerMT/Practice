@@ -38,6 +38,12 @@ public class Main {
         System.out.println(sb);
         sb.insert(1, "H");
         sb.reverse();
+        int[] integers = new int[3];
+        int[] integers1 = {1,3};
+        int[][] dvumerenMasiv = new int[1][3];
+        for (int i : integers){
+            System.out.println(i);
+        }
 
 
         /*
