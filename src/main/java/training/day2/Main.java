@@ -28,8 +28,17 @@ public class Main {
         System.out.println(s.substring(0,6).charAt(7));
 
         StringBuilder sb = new StringBuilder("Hello");
-        sb.append(" append");
+        StringBuilder sb2 = sb;
+        sb.append(" World");
         System.out.println(sb);
+        sb = sb.append(" World");
+        System.out.println("Sb2: " + sb2);
+        sb.delete(1, 5);
+        sb.deleteCharAt(1);
+        System.out.println(sb);
+        sb.insert(1, "H");
+        sb.reverse();
+
 
         /*
         //Zadacha 1
