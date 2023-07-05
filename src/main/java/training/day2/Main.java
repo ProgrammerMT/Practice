@@ -3,7 +3,7 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+// then press Enter. You can now see whitespace characters in your code. .
 public class Main {
     public static void sum(int[] nums){
         int sum = 0;
