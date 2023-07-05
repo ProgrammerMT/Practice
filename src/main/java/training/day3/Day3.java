@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Day3 {
+
     public static void zadacha1(){
         Scanner scann = new Scanner(System.in);
         int[] arr = new int[10];
