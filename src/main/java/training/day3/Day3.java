@@ -4,6 +4,34 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Day3 {
+    //Homework
+    //Zadacha 1
+    public static void zadacha1(int first, int second, int third){
+        int min = first;
+        if (second < min){
+            min = second;
+        }
+        if (third < min){
+            min = third;
+        }
+
+        System.out.println(min);
+    }
+
+    public static void zadacha2(){
+        Scanner scann = new Scanner(System.in);
+        System.out.println("Enter a num");
+        int num = scann.nextInt();
+        if (num % 2 == 0){
+            System.out.println(true);
+        }
+        else if (num % 2 != 0){
+            System.out.println(false);
+        }
+
+    }
+
+
     public static void zadacha1(){
         Scanner scann = new Scanner(System.in);
         int[] arr = new int[10];
@@ -75,16 +103,16 @@ public class Day3 {
         list.set(list.size() - 1, first);
     }
     public static void main(String[] args) {
-        zadacha1();
+        //zadacha1();
 
         String str1 = "Plovdiv";
         String str2 = "lo";
-        zadacha2(str1, str2);
+        //zadacha2(str1, str2);
 
         String name = "Ivan Ivanov Ivanov";
-        zadacha3(name);
+        //zadacha3(name);
 
-        zadacha4(name);
+        //zadacha4(name);
 
         ArrayList<String> list = new ArrayList();
         list.add("Ivan");
@@ -92,6 +120,15 @@ public class Day3 {
         list.add("New");
         list.add("Last");
         list.add("More");
-        zadacha5(list);
+        //zadacha5(list);
+
+        Scanner scann = new Scanner(System.in);
+        System.out.println("Enter numbers: ");
+        int first = scann.nextInt();
+        int second = scann.nextInt();
+        int third = scann.nextInt();
+        //Homework
+        zadacha1(first, second, third);
+        zadacha2();
     }
 }
