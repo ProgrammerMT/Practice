@@ -101,6 +101,10 @@ public class Day3 {
         String last = list.get(list.size() - 1);
         list.set(0, last);
         list.set(list.size() - 1, first);
+
+        for (String words : list){
+            System.out.println(words);
+        }
     }
     public static void main(String[] args) {
         //zadacha1();
