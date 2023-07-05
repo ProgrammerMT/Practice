@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Day3 {
-
     public static void zadacha1(){
         Scanner scann = new Scanner(System.in);
         int[] arr = new int[10];
@@ -79,17 +78,18 @@ public class Day3 {
             System.out.println(words);
         }
     }
+
     public static void main(String[] args) {
-        //zadacha1();
+        zadacha1();
 
         String str1 = "Plovdiv";
         String str2 = "lo";
-       // zadacha2(str1, str2);
+        zadacha2(str1, str2);
 
         String name = "Ivan Ivanov Ivanov";
-       // zadacha3(name);
+        zadacha3(name);
 
-        //zadacha4(name);
+        zadacha4(name);
 
         ArrayList<String> list = new ArrayList();
         list.add("Ivan");
