@@ -1,4 +1,5 @@
 package training.day2;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -11,7 +12,7 @@ public class Main {
         //Zadacha 1
         System.out.println("Enter a day num: ");
         int day = scanner.nextInt();
-        switch (day){
+        switch (day) {
             case 1:
                 System.out.println("Monday");
                 break;
@@ -33,7 +34,9 @@ public class Main {
             case 7:
                 System.out.println("Sunday");
                 break;
-            default: System.out.println("No data"); break;
+            default:
+                System.out.println("No data");
+                break;
         }
         //Zadacha 2
         Scanner scanner1 = new Scanner(System.in);
@@ -104,7 +107,6 @@ public class Main {
         for (String day1 : days) {
             System.out.println(day1);
         }
-
 
 
     }
