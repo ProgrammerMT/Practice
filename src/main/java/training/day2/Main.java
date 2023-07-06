@@ -1,9 +1,13 @@
 package training.day2;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 import java.util.*;
 
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code. .
+// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void sum(int[] nums){
         int sum = 0;
@@ -13,17 +17,18 @@ public class Main {
         System.out.println(sum);
     }
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         String s = "World";
         System.out.println(s.charAt(4));
         System.out.println(s.toLowerCase());
-        System.out.println(s.substring(0,6));
+        System.out.println(s.substring(0, 6));
         System.out.println(s.startsWith("hello"));
         s = s.concat("World");
         System.out.println(s.indexOf("World", 6));
         System.out.println(s.contains("lo"));
         System.out.println(s.replace("l", "L"));
         System.out.println(s.trim());
-        System.out.println(s.substring(0,6).charAt(7));
+        System.out.println(s.substring(0, 6).charAt(7));
 
         StringBuilder sb = new StringBuilder("Hello");
         StringBuilder sb2 = sb;
@@ -37,9 +42,9 @@ public class Main {
         sb.insert(1, "H");
         sb.reverse();
         int[] integers = new int[3];
-        int[] integers1 = {1,3};
+        int[] integers1 = {1, 3};
         int[][] dvumerenMasiv = new int[1][3];
-        for (int i : integers){
+        for (int i : integers) {
             System.out.println(i);
         }
         Arrays.sort(integers);
@@ -50,18 +55,17 @@ public class Main {
         integer.remove(new Integer(101));
         Collections.sort(integer);
         integer.size();
-        integer.set(1,2);
+        integer.set(1, 2);
         integer.clear();
         integer.isEmpty();
         integer.contains(1);
 
 
-        /*
-        //Zadacha 1
         Scanner scanner = new Scanner(System.in);
+        //Zadacha 1
         System.out.println("Enter a day num: ");
         int day = scanner.nextInt();
-        switch (day){
+        switch (day) {
             case 1:
                 System.out.println("Monday");
                 break;
@@ -83,7 +87,9 @@ public class Main {
             case 7:
                 System.out.println("Sunday");
                 break;
-            default: System.out.println("No data"); break;
+            default:
+                System.out.println("No data");
+                break;
         }
         //Zadacha 2
         Scanner scanner1 = new Scanner(System.in);
@@ -154,12 +160,13 @@ public class Main {
         for (String day1 : days) {
             System.out.println(day1);
         }
-*/
+
+
         //Homework
         //Zadacha 1
         String[] words = {"Алфа", "аватар", "беда", "бреза", "салон"};
-        for (String word1 : words){
-            if (word1.charAt(0) == 'a' || word1.charAt(0) == 'A'){
+        for (String word1 : words) {
+            if (word1.charAt(0) == 'а' || word1.charAt(0) == 'А') {
                 System.out.println(word1);
             }
         }
@@ -167,26 +174,24 @@ public class Main {
         //Zadacha 2
         Scanner scann = new Scanner(System.in);
         int[] arr = new int[10];
-        for (int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = scann.nextInt();
         }
         sum(arr);
 
         //Zadacha 3
         List<String> list = new ArrayList<>();
-        for (int i = 0; i < 4; i++){
+        for (int i = 0; i < 4; i++) {
             System.out.println("Write a word: ");
             list.add(scann.next());
         }
-
         List<String> list1 = new ArrayList<>();
-        for (String input : list){
-            if (input.length() >= 4){
+        for (String input : list) {
+            if (input.length() >= 4) {
                 list1.add(input);
             }
         }
-
-        for (String input : list1){
+        for (String input : list1) {
             System.out.println(input);
         }
     }
