@@ -61,7 +61,7 @@ public class Main {
         integer.contains(1);
 
 
-        Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
         //Zadacha 1
         System.out.println("Enter a day num: ");
         int day = scanner.nextInt();
