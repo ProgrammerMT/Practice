@@ -1,6 +1,6 @@
 package training.day4.homework;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle {
     private final static double DEFAULT_FUEL_CONSUMPTION = 3;
 
     public Car(double fuel, int horsePower) {
