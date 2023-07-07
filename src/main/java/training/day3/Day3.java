@@ -11,10 +11,9 @@ public class Day3 {
         if (second < min) {
             min = second;
         }
-        if (third < min) {
+        else if (third < min) {
             min = third;
         }
-
         System.out.println(min);
     }
 
@@ -27,9 +26,7 @@ public class Day3 {
         } else if (num % 2 != 0) {
             System.out.println(false);
         }
-
     }
-
 
     public static void zadacha1() {
         Scanner scann = new Scanner(System.in);
