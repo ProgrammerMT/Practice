@@ -13,8 +13,8 @@ public class Vehicle {
     }
 
     public void drive(double kilometers) {
-        double roadRun = (getFuel() / getFuelConsumption()) * 100;
-        double leftFuel = fuel - (kilometers * getFuelConsumption()) / 100;
+        double roadRun = (fuel / fuelConsumption) * 100;
+        double leftFuel = fuel - (kilometers * fuelConsumption) / 100;
         if (roadRun < kilometers) {
             throw new IllegalArgumentException("Not enough fuel! You can drive " + roadRun + "kilometers");
         } else {
@@ -54,5 +54,4 @@ public class Vehicle {
         }
         this.horsePower = horsePower;
     }
-
 }
