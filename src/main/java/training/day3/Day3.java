@@ -10,8 +10,7 @@ public class Day3 {
         int min = first;
         if (second < min) {
             min = second;
-        }
-        else if (third < min) {
+        } else if (third < min) {
             min = third;
         }
         System.out.println(min);
@@ -104,16 +103,16 @@ public class Day3 {
     }
 
     public static void main(String[] args) {
-        //zadacha1();
+        zadacha1();
 
         String str1 = "Plovdiv";
         String str2 = "lo";
-        //zadacha2(str1, str2);
+        zadacha2(str1, str2);
 
         String name = "Ivan Ivanov Ivanov";
-        //zadacha3(name);
+        zadacha3(name);
 
-        //zadacha4(name);
+        zadacha4(name);
 
         ArrayList<String> list = new ArrayList();
         list.add("Ivan");
@@ -121,7 +120,7 @@ public class Day3 {
         list.add("New");
         list.add("Last");
         list.add("More");
-        //zadacha5(list);
+        zadacha5(list);
 
         Scanner scann = new Scanner(System.in);
         System.out.println("Enter numbers: ");
