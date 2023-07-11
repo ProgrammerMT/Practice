@@ -1,4 +1,5 @@
 package training.day2;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,13 +10,14 @@ import java.util.*;
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
-    public static void sum(int[] nums){
+    public static void sum(int[] nums) {
         int sum = 0;
-        for (int i = 0; i < nums.length; i++){
+        for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
         }
         System.out.println(sum);
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String s = "World";
