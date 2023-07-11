@@ -164,7 +164,7 @@ public class Main {
         }
 
 
-        //Homework
+//Homework
         //Zadacha 1
         String[] words = {"Алфа", "аватар", "беда", "бреза", "салон"};
         for (String word1 : words) {
