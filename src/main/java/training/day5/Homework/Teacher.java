@@ -1,13 +1,13 @@
 package training.day5.Homework;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Teacher extends Person{
     private String school;
-    private ArrayList<String> subjects;
+    private List<String> subjects;
     private double salary;
 
-    public Teacher(String name, String gender, int ID, String school, ArrayList<String> subjects, double salary) {
+    public Teacher(String name, String gender, int ID, String school, List<String> subjects, double salary) {
         super(name, gender, ID);
         this.school = school;
         this.subjects = subjects;
@@ -22,11 +22,11 @@ public class Teacher extends Person{
         this.school = school;
     }
 
-    public ArrayList<String> getSubjects() {
+    public List<String> getSubjects() {
         return subjects;
     }
 
-    public void setSubjects(ArrayList<String> subjects) {
+    public void setSubjects(List<String> subjects) {
         this.subjects = subjects;
     }
 

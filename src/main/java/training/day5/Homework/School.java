@@ -47,7 +47,7 @@ public class School {
         double highestGrade = 0;
 
         for (Student student : students) {
-            int grade = student.getSubjectGrade(subject);
+            int grade = student.getGrade(subject);
             if (grade != -1 && (studentsHighestGrade == null || grade > highestGrade)) {
                 highestGrade = grade;
                 studentsHighestGrade = student;
@@ -61,7 +61,7 @@ public class School {
         int lowestGrade = 6;
 
         for (Student student : students) {
-            int grade = student.getSubjectGrade(subject);
+            int grade = student.getGrade(subject);
             if (grade != -1 && grade < lowestGrade) {
                 lowestGrade = grade;
                 studentWithLowestGrade = student;
@@ -85,7 +85,7 @@ public class School {
         int numSubjects = student.getSubjects().size();
 
         for (String subject : student.getSubjects()) {
-            int grade = student.getSubjectGrade(subject);
+            int grade = student.getGrade(subject);
             if (grade != -1) {
                 totalGrades += grade;
             } else {
@@ -112,7 +112,7 @@ public class School {
         int highestGrade = 2;
 
         for (String subject : student.getSubjects()) {
-            int grade = student.getSubjectGrade(subject);
+            int grade = student.getGrade(subject);
             if (grade > highestGrade) {
                 highestGrade = grade;
                 subjectWithHighestGrade = subject;
