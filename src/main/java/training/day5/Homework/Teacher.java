@@ -2,7 +2,8 @@ package training.day5.Homework;
 
 import java.util.List;
 
-public class Teacher extends Person{
+public class Teacher extends Person {
+
     private String school;
     private List<String> subjects;
     private double salary;
@@ -36,5 +37,9 @@ public class Teacher extends Person{
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public String toString() {
+        return super.toString() + " " + school + " " + subjects + " " + salary;
     }
 }

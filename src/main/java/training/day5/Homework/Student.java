@@ -6,27 +6,21 @@ import java.util.ArrayList;
 import java.util.*;
 
 public class Student extends Person {
+
     private int studentsClass;
     private int numberInClass;
 
     private Map<String, Integer> grades;
-
-    //private ArrayList<String> subjects;
-    //private ArrayList<Integer> subjectGrade;
 
     public Student(String name, String gender, int ID, int studentsClass, int numberInClass) {
         super(name, gender, ID);
         this.studentsClass = studentsClass;
         this.numberInClass = numberInClass;
         this.grades = new HashMap<>();
-        //this.subjects = new ArrayList<>();
-        //this.subjectGrade = new ArrayList<>();
     }
 
     public void addGrade(String subject, int grade) {
         grades.put(subject, grade);
-        //subjects.add(subject);
-        //subjectGrade.add(grade);
     }
 
     public int getGrade(String subject) {
@@ -53,20 +47,7 @@ public class Student extends Person {
         this.numberInClass = numberInClass;
     }
 
-    /*public ArrayList<String> getSubjects() {
-        return subjects;
+    public String toString() {
+        return super.toString() + " " + studentsClass + " " + numberInClass + " " + grades;
     }
-
-    public void setSubjects(ArrayList<String> subjects) {
-        this.subjects = subjects;
-    }
-
-    public ArrayList<Integer> getSubjectGrade() {
-       return subjectGrade;
-    }
-
-    public void setSubjectGrade(ArrayList<Integer> subjectGrade) {
-        this.subjectGrade = subjectGrade;
-    }
-     */
 }

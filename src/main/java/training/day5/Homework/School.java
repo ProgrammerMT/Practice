@@ -3,6 +3,7 @@ package training.day5.Homework;
 import java.util.ArrayList;
 
 public class School {
+
     private ArrayList<Student> students;
     private ArrayList<Teacher> teachers;
 
@@ -19,26 +20,17 @@ public class School {
         teachers.add(teacher);
     }
 
-    public void printStudentsAndTeachersInfo() {
+    public void printStudentsInfo() {
         System.out.println("Students: ");
         for (Student student : students) {
-            System.out.println("Name: " + student.getName());
-            System.out.println("Gender: " + student.getGender());
-            System.out.println("ID: " + student.getID());
-            System.out.println("Class: " + student.getClass());
-            System.out.println("Number in class: " + student.getNumberInClass());
-            System.out.println();
+            System.out.println(student);
         }
+    }
 
+    public void printTeacherInfo() {
         System.out.println("Teachers: ");
         for (Teacher teacher : teachers) {
-            System.out.println("Name: " + teacher.getName());
-            System.out.println("Gender: " + teacher.getGender());
-            System.out.println("ID: " + teacher.getID());
-            System.out.println("School: " + teacher.getSchool());
-            System.out.println("Subjects: " + teacher.getSubjects());
-            System.out.println("Salary: " + teacher.getSalary());
-            System.out.println();
+            System.out.println(teacher);
         }
     }
 

@@ -1,4 +1,5 @@
 package training.day5.Homework;
+
 import java.util.*;
 
 public class Main {
@@ -7,15 +8,15 @@ public class Main {
 
         // Students
         Student student1 = new Student("Alice", "Female", 1, 10, 1);
-        student1.addGrade("Math",95);
-        student1.addGrade("Science",90);
-        student1.addGrade("English",85);
+        student1.addGrade("Math", 95);
+        student1.addGrade("Science", 90);
+        student1.addGrade("English", 85);
         school.addStudent(student1);
 
         Student student2 = new Student("Bob", "Male", 2, 9, 2);
-        student2.addGrade("Math",80);
-        student2.addGrade("Science",85);
-        student2.addGrade("English",90);
+        student2.addGrade("Math", 80);
+        student2.addGrade("Science", 85);
+        student2.addGrade("English", 90);
         school.addStudent(student2);
 
         // Teachers
@@ -24,29 +25,30 @@ public class Main {
         Teacher teacher2 = new Teacher("Mrs. Johnson", "Female", 1002, "School X", new ArrayList<>(Arrays.asList("Math", "Science")), 4500);
         school.addTeacher(teacher2);
 
-        school.printStudentsAndTeachersInfo();
+        school.printStudentsInfo();
+        school.printTeacherInfo();
 
         String subject = "Math";
         Student studentWithHighestGrade = school.studentsHighestGrade(subject);
-        System.out.println("Student with the highest grade in "+subject +": "+studentWithHighestGrade.getName());
+        System.out.println("Student with the highest grade in " + subject + ": " + studentWithHighestGrade.getName());
 
         Student studentWithLowestGrade = school.studentsLowestGrade(subject);
-        System.out.println("Student with the lowest grade in "+subject +": "+studentWithLowestGrade.getName());
+        System.out.println("Student with the lowest grade in " + subject + ": " + studentWithLowestGrade.getName());
 
         double averageSalary = school.averageSalary();
-        System.out.println("Average salary: "+averageSalary);
+        System.out.println("Average salary: " + averageSalary);
 
         Student student = student1; // Choose a student for calculation
         double averageGradeOfStudent = school.averageGradeOfStudent(student);
-        System.out.println("Average grade of "+student.getName()+": "+averageGradeOfStudent);
+        System.out.println("Average grade of " + student.getName() + ": " + averageGradeOfStudent);
 
         double classAverageGrade = school.classAverageGrade();
-        System.out.println("Class average grade: "+classAverageGrade);
+        System.out.println("Class average grade: " + classAverageGrade);
 
         String subjectWithHighestGrade = school.subjectWithHighestGrade(student);
-        System.out.println("Subject with the highest grade for "+student.getName()+": "+subjectWithHighestGrade);
+        System.out.println("Subject with the highest grade for " + student.getName() + ": " + subjectWithHighestGrade);
 
         Teacher teacherWithHighestGrades = school.teacherWithHighestGrades();
-        System.out.println("Teacher signing the highest grades: "+teacherWithHighestGrades.getName());
+        System.out.println("Teacher signing the highest grades: " + teacherWithHighestGrades.getName());
     }
 }

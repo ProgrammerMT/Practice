@@ -3,6 +3,7 @@ package training.day5.Homework;
 import java.util.ArrayList;
 
 public class Person {
+
     private String name;
     private String gender;
     private int ID;
@@ -35,5 +36,9 @@ public class Person {
 
     public void setID(int ID) {
         this.ID = ID;
+    }
+
+    public String toString() {
+        return name + " " + gender + " " + ID;
     }
 }
