@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         School school = new School();
 
-        // Students
+        //Students
         Student student1 = new Student("Alice", "Female", 1, 10, 1);
         student1.addGrade("Math", 5);
         student1.addGrade("Science", 6);
