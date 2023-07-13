@@ -1,6 +1,7 @@
 package training.day5.Homework;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class School {
 
@@ -121,7 +122,7 @@ public class School {
         for (Teacher teacher : teachers) {
             int gradesCount = 0;
             for (Student student : students) {
-                if (student.getSubjects().containsAll(teacher.getSubjects())) {
+                if (student.getSubjects().containsAll(Arrays.asList(teacher.getSubjects()))) {
                     gradesCount += teacher.getSubjects().size();
                 }
             }

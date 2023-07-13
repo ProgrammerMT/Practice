@@ -8,15 +8,15 @@ public class Main {
 
         // Students
         Student student1 = new Student("Alice", "Female", 1, 10, 1);
-        student1.addGrade("Math", 95);
-        student1.addGrade("Science", 90);
-        student1.addGrade("English", 85);
+        student1.addGrade("Math", 5);
+        student1.addGrade("Science", 6);
+        student1.addGrade("English", 4);
         school.addStudent(student1);
 
         Student student2 = new Student("Bob", "Male", 2, 9, 2);
-        student2.addGrade("Math", 80);
-        student2.addGrade("Science", 85);
-        student2.addGrade("English", 90);
+        student2.addGrade("Math", 2);
+        student2.addGrade("Science", 4);
+        student2.addGrade("English", 5);
         school.addStudent(student2);
 
         // Teachers

@@ -35,6 +35,8 @@ public class Student extends Person {
         return studentsClass;
     }
 
+    public Map<String, Integer> getGrades() { return grades; }
+
     public void setStudentsClass(int studentsClass) {
         this.studentsClass = studentsClass;
     }
